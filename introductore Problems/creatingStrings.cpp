@@ -8,8 +8,13 @@ int main(){
     vector<string> resps;
     cin >> n;
     sort(n.begin(), n.end());
-    for (int i = 0; i < 30; i++){
-        cout << next_permutation(n.begin(), n.end()) << endl;
+    resps.push_back(n);
+    while(next_permutation(n.begin(), n.end())){
+        resps.push_back(n);
+    }
+    cout << resps.size() << endl;
+    for (auto i : resps){
+        cout << i <<  "\n";
     }
     
     
