@@ -20,8 +20,8 @@ int main(){
             nums[j] = "1" + nums[j];
     }
  
-    for (i = 0 ; i < nums.size() ; i++ )
-        cout << nums[i] << endl;
-    
-    
+    for (i = 0 ; i < nums.size() ; i++){
+        cout << nums[i] << "\n";
+    }
+        
 }
